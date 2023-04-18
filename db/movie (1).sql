@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 18 apr 2023 om 12:12
+-- Gegenereerd op: 18 apr 2023 om 12:27
 -- Serverversie: 10.4.24-MariaDB
 -- PHP-versie: 8.1.6
 
@@ -39,6 +39,17 @@ CREATE TABLE `movie` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Gegevens worden geëxporteerd voor tabel `movie`
+--
+
+INSERT INTO `movie` (`id`, `title`, `description`, `year`, `budget`, `genre_id`, `actors_id`) VALUES
+(1, 'notting hill', 'notting hill is een britsamerikaanse film uit 1999', 1999, '99999.99', 1, 3),
+(2, 'deadpool', 'deadpool is een amerikaanse film gebaseerd op het', 2016, '15668.00', 2, 2),
+(3, 'red notice', 'een fbi profiler zizt achter de meest gezochte kuns', 2021, '61861.00', 1, 1),
+(4, 'avatars', 'een x-marinier lands op een vreemde planeet met b', 2009, '56194.00', 2, 4),
+(5, 'avengers', 'de overgebleven avengers thor black widow captai', 2019, '87175.00', 3, 5);
+
+--
 -- Indexen voor geëxporteerde tabellen
 --
 
@@ -58,7 +69,7 @@ ALTER TABLE `movie`
 -- AUTO_INCREMENT voor een tabel `movie`
 --
 ALTER TABLE `movie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
